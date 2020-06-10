@@ -10,7 +10,7 @@ packets = rdpcap("dns.cap")
 for packet in packets:
 	#get src and dst ip
 	src = packet[IP].src
-	dst = packet[IP].ds  t
+	dst = packet[IP].dst
      
     #if TCP packet 
 	if TCP in packet:
